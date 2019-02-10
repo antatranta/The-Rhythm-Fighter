@@ -1,1 +1,1 @@
-# The-Rhythm-Fighter
+# The Rhythm Fighter
