@@ -9,8 +9,8 @@ public class SongManager : MonoBehaviour
     public float songPosition;
     public float songPosInBeats;
     public float secPerBeat;
-    public float dspTimeSong;
-    public float offset = 0.2f;
+    private float dspTimeSong;
+    private float offset = 0.2f;
 
     // Start is called before the first frame update
     public void Start()
