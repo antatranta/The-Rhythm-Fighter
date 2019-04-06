@@ -8,6 +8,7 @@ public class MusicNotePool : MonoBehaviour
     public static MusicNotePool instance;
     public GameObject notePrefab;
     public int initialAmount;
+    
     private List<MusicNoteController> noteList;
 
     void Awake()
@@ -22,32 +23,34 @@ public class MusicNotePool : MonoBehaviour
 
         for (int i = 0; i < initialAmount; i++)
         {
-            GameObject obj = Instantiate(notePrefab);
+            GameObject note = (GameObject) Instantiate(notePrefab);
 
-            obj.SetActive(false);
+            note.SetActive(false);
 
-            noteList.Add(obj.GetComponent<MusicNoteController>());
+            noteList.Add(note.GetComponent<MusicNoteController>());
         }
     }
 
-    public MusicNoteController GetNote(float startPosX, float startPosY, float endPosY, float removePosY, float startPosZ, float noteBeat)
+    public MusicNoteController CreateAndGetNote(float startPosX, float startPosY, float endPosY, float removePosY, float startPosZ, float noteBeat)
     {
-        foreach (MusicNoteController note in noteList)
-        {
-            if (note.gameObject.activeInHierarchy)
-            {
-                note.Initialize(startPosX, startPosY, endPosY, removePosY, startPosZ, noteBeat);
-                note.gameObject.SetActive(true);
+        // check if there is an inactive instance
+		foreach (MusicNoteController note in noteList)
+		{
+			if (!note.gameObject.activeInHierarchy)
+			{
+				note.Initialize(startPosX, startPosY, endPosY, removePosY, startPosZ, noteBeat);
+				note.gameObject.SetActive(true);
+                
+				return note;
+			}
+		}
 
-                return note;
-            }
-        }
+		// no inactive instance, so insantiate a new GetComponent
+		MusicNoteController musicNote = ((GameObject) Instantiate(notePrefab)).GetComponent<MusicNoteController>();
 
-        MusicNoteController musicNote = (Instantiate(notePrefab)).GetComponent<MusicNoteController>();
-        musicNote.Initialize(startPosX, startPosY, endPosY, removePosY, startPosZ, noteBeat);
+		musicNote.Initialize(startPosX, startPosY, endPosY, removePosY, startPosZ, noteBeat);
+		noteList.Add(musicNote);
 
-        noteList.Add(musicNote);
-
-        return musicNote;
+		return musicNote;
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MusicNoteController : MonoBehaviour
 {
-    public SpriteRenderer noteSprite;
     private float startPosY;
     private float endPosY;
     private float removePosY;

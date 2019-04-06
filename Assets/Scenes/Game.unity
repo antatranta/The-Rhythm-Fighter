@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 488606253}
   - component: {fileID: 488606254}
   m_Layer: 0
-  m_Name: Fret Button K
+  m_Name: Fret Button L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 1000836a14e4a2543b29b80df5af58bb, type: 3}
   pressedImage: {fileID: 21300000, guid: 09734e0a27fad414a956f79a8b0e10a5, type: 3}
-  keyPressed: 107
+  defaultLight: {fileID: 0}
+  pressedLight: {fileID: 0}
+  keyPressed: 108
 --- !u!1 &590764801
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +273,176 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &600293703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600293707}
+  - component: {fileID: 600293706}
+  - component: {fileID: 600293705}
+  - component: {fileID: 600293704}
+  m_Layer: 0
+  m_Name: SongManager & Music Note Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &600293704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600293703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e074305bff99ff74492781b066d6f0a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 6592421795551206974, guid: 0763f713265cfd347845fa9a473bbed7,
+    type: 3}
+  initialAmount: 15
+--- !u!114 &600293705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600293703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e62ccad8880c1b4aa8eb49c8f5ef95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPosX:
+  - -800
+  - 0
+  - 0
+  - 0
+  - 0
+  startPosY: 500
+  endPosY: -350
+  removePosY: -500
+  perfectRankY: 0.25
+  goodRankY: 0.4
+  okayRankY: 0.5
+  songInfo: {fileID: 11400000, guid: 0275076146716354aaead3476a651619, type: 2}
+--- !u!82 &600293706
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600293703}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &600293707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600293703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927248584
 GameObject:
@@ -367,7 +538,7 @@ RectTransform:
   - {fileID: 1973364761}
   - {fileID: 1702551059}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -386,7 +557,7 @@ GameObject:
   - component: {fileID: 1379907831}
   - component: {fileID: 1379907832}
   m_Layer: 0
-  m_Name: Fret Button J
+  m_Name: Fret Button K
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,7 +639,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 1000836a14e4a2543b29b80df5af58bb, type: 3}
   pressedImage: {fileID: 21300000, guid: 09734e0a27fad414a956f79a8b0e10a5, type: 3}
-  keyPressed: 106
+  defaultLight: {fileID: 0}
+  pressedLight: {fileID: 0}
+  keyPressed: 107
 --- !u!1 &1391110655
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 1000836a14e4a2543b29b80df5af58bb, type: 3}
   pressedImage: {fileID: 21300000, guid: 09734e0a27fad414a956f79a8b0e10a5, type: 3}
+  defaultLight: {fileID: 0}
+  pressedLight: {fileID: 0}
   keyPressed: 32
 --- !u!1 &1538557214
 GameObject:
@@ -693,7 +868,7 @@ GameObject:
   - component: {fileID: 1750837057}
   - component: {fileID: 1750837058}
   m_Layer: 0
-  m_Name: Fret Button D
+  m_Name: Fret Button S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -775,7 +950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 1000836a14e4a2543b29b80df5af58bb, type: 3}
   pressedImage: {fileID: 21300000, guid: 09734e0a27fad414a956f79a8b0e10a5, type: 3}
-  keyPressed: 100
+  defaultLight: {fileID: 0}
+  pressedLight: {fileID: 0}
+  keyPressed: 115
 --- !u!1 &1795792901
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +1039,7 @@ GameObject:
   - component: {fileID: 1966951926}
   - component: {fileID: 1966951927}
   m_Layer: 0
-  m_Name: Fret Button S
+  m_Name: Fret Button A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,7 +1121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultImage: {fileID: 21300000, guid: 1000836a14e4a2543b29b80df5af58bb, type: 3}
   pressedImage: {fileID: 21300000, guid: 09734e0a27fad414a956f79a8b0e10a5, type: 3}
-  keyPressed: 115
+  defaultLight: {fileID: 0}
+  pressedLight: {fileID: 0}
+  keyPressed: 97
 --- !u!1 &1973364760
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +1158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: 0.053894}
+  m_AnchoredPosition: {x: -480, y: 0}
   m_SizeDelta: {x: 960, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973364762
