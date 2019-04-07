@@ -28,15 +28,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  songOffset: 0.02
-  bpm: 128.03
+  songOffset: 0.44
+  bpm: 128
   tracks:
   - notes:
-    - note: 2
-    - note: 4
-    - note: 6
-    - note: 8
-    - note: 10
+    - note: 1.64
+    - note: 4.16
+    - note: 5.11
+    - note: 6.08
+    - note: 6.73
     - note: 12
     - note: 14
     - note: 16

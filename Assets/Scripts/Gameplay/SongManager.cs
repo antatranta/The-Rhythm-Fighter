@@ -6,6 +6,10 @@ using UnityEngine;
 public class SongManager : MonoBehaviour
 {
     public enum Rank {PERFECT, GOOD, OKAY, MISS};
+
+    public delegate void OnHitAction(int trackNumber, Rank rank);
+    public static event OnHitAction onHitEvent;
+
     public float[] spawnPosX;
     public float startPosY;
     public float endPosY;
@@ -34,12 +38,55 @@ public class SongManager : MonoBehaviour
     private int[] trackNextIndices;
     private int length;
 
+    void PlayerInput(int trackNumber)
+    {
+        if (queueForTracks[trackNumber].Count != 0)
+        {
+            MusicNoteController frontNote = queueForTracks[trackNumber].Peek();
+
+            float noteHitPos = Mathf.Abs(frontNote.gameObject.transform.position.y - endPosY);
+
+            if (noteHitPos < perfectRankY)
+            {
+                frontNote.Perfect();
+
+                if (onHitEvent != null)
+                {
+                    onHitEvent(trackNumber, Rank.PERFECT);
+                }
+
+                queueForTracks[trackNumber].Dequeue();
+            }
+            else if (noteHitPos < goodRankY)
+            {
+                frontNote.Good();
+
+                if (onHitEvent != null)
+                {
+                    onHitEvent(trackNumber, Rank.GOOD);
+                }
+
+                queueForTracks[trackNumber].Dequeue();
+            }
+            else if (noteHitPos < okayRankY)
+            {
+                frontNote.Okay();
+
+                if (onHitEvent != null)
+                {
+                    onHitEvent(trackNumber, Rank.OKAY);
+                }
+
+                queueForTracks[trackNumber].Dequeue();
+            }
+        }
+    }
+
     // Start is called before the first frame update
     public void Start()
     {
-        // songInfo from UI selection
-        song = GetComponent<AudioSource>();
-        song.clip = songInfo.song;
+        // listens to player input
+        PlayerInputController.inputtedEvent += PlayerInput;
 
         bpm = songInfo.bpm;
         secPerBeat = 60f / bpm;
@@ -54,6 +101,10 @@ public class SongManager : MonoBehaviour
         }
 
         tracks = songInfo.tracks;
+
+        // songInfo from UI selection
+        song = GetComponent<AudioSource>();
+        song.clip = songInfo.song;
 
         dspTimeSong = (float)AudioSettings.dspTime;
 
@@ -89,7 +140,7 @@ public class SongManager : MonoBehaviour
         }
 
         // loop the queue to check if any of the notes reached the finish line
-        /*for (int i = 0; i < length; i++)
+        for (int i = 0; i < length; i++)
         {
             if (queueForTracks[i].Count == 0)
             {
@@ -99,21 +150,19 @@ public class SongManager : MonoBehaviour
             MusicNoteController currentNote = queueForTracks[i].Peek();
 
             if (currentNote.transform.position.y <= endPosY - goodRankY)
-        }*/
+            {
+                queueForTracks[i].Dequeue();
+
+                if (onHitEvent != null)
+                {
+                    onHitEvent(i, Rank.MISS);
+                }
+            }
+        }
     }
 
-    void PlayerInput(int trackNumber)
+    private void OnDestroy() 
     {
-        if (queueForTracks[trackNumber].Count > 0)
-        {
-            MusicNoteController frontNote = queueForTracks[trackNumber].Peek();
-
-            //float noteHitPos = Mathf.Abs(frontNote.noteBeat - songPosInBeats);
-
-            //if (noteHitPos )
-            //{
-
-            //}
-        }
+        PlayerInputController.inputtedEvent -= PlayerInput;
     }
 }

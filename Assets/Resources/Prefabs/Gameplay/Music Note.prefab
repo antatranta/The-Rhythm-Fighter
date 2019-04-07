@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6435062448213415765}
   - component: {fileID: 8724213782704008580}
-  - component: {fileID: 6167587578141705200}
+  - component: {fileID: 1849122072890860071}
   m_Layer: 0
   m_Name: Music Note
   m_TagString: Untagged
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6167587578141705200
+--- !u!114 &1849122072890860071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

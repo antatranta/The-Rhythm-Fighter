@@ -308,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notePrefab: {fileID: 6592421795551206974, guid: 0763f713265cfd347845fa9a473bbed7,
     type: 3}
-  initialAmount: 15
+  initialAmount: 30
 --- !u!114 &600293705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,9 +330,9 @@ MonoBehaviour:
   startPosY: 500
   endPosY: -350
   removePosY: -500
-  perfectRankY: 0.25
-  goodRankY: 0.4
-  okayRankY: 0.5
+  perfectRankY: 50
+  goodRankY: 25
+  okayRankY: 10
   songInfo: {fileID: 11400000, guid: 0275076146716354aaead3476a651619, type: 2}
 --- !u!82 &600293706
 AudioSource:

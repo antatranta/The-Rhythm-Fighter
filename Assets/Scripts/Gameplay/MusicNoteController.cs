@@ -50,9 +50,4 @@ public class MusicNoteController : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
-    public void Miss()
-    {
-        gameObject.SetActive(false);
-    }
 }
