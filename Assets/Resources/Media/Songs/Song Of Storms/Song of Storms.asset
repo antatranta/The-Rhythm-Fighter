@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ff54f56edc4074ea1d6411dd16431e, type: 3}
+  m_Name: Song of Storms
+  m_EditorClassIdentifier: 
+  song: {fileID: 8300000, guid: 27ff6f4bcb3a7d248917696e2ed1f21a, type: 3}
+  songID: 1
+  collection: 0
+  songNum: 1
+  difficulty: 0
+  songTitle: Song of Storms
+  artist: BlueSCD
+  album: Legend of Zelda
+  collectionTitle: Legend of Zelda
+  songImage: {fileID: 0}
+  songOffset: -0.4
+  bpm: 98.77
+  tracks:
+  - notes:
+    - note: 1.641753
+    - note: 1.88758
+    - note: 2.48459
+    - note: 2.906008
+    - note: 4.029792
+    - note: 4.486329
+    - note: 4.977983
+    - note: 5.469639
+    - note: 5.926176
+    - note: 6.909485
+    - note: 7.436259
+    - note: 7.927915
+    - note: 8.489805
+    - note: 8.946342
+    - note: 9.999889
+    - note: 10.52666
+    - note: 10.9832
+    - note: 11.43974
+    - note: 11.93139
+    - note: 12.9147
+    - note: 13.23076
+    - note: 13.47659
+    - note: 14.49502
+    - note: 14.81108
+    - note: 15.05691
+    - note: 15.93487
+    - note: 16.70747
+    - note: 16.9533
+    - note: 17.19912
+    - note: 17.44495
+    - note: 17.69078
+    - note: 17.97172
+  - notes: []
+  - notes: []
+  - notes: []
+  - notes: []

@@ -24,7 +24,6 @@ public class SongInfo : ScriptableObject
     public Sprite songImage;
 
     [Header("Gameplay Information")]
-    public AudioClip[] defaultBeats;
     public float songOffset;
     public float bpm;
 
