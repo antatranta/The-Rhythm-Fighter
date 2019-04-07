@@ -27,6 +27,8 @@ public class SongManager : MonoBehaviour
     // number of of beats/notes shown on screen
     public static float beatsShownOnScreen = 5f;
 
+    public GameHandler healthUpdate;
+
     public SongInfo songInfo;
     private SongInfo.Track[] tracks;
     // how much time has passed since the song started
@@ -37,6 +39,7 @@ public class SongManager : MonoBehaviour
     // index for each track
     private int[] trackNextIndices;
     private int length;
+
 
     void PlayerInput(int trackNumber)
     {
@@ -156,6 +159,7 @@ public class SongManager : MonoBehaviour
                 if (onHitEvent != null)
                 {
                     onHitEvent(i, Rank.MISS);
+                    healthUpdate.Decrement(); //Missed Note decrement healthbar
                 }
             }
         }
