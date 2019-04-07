@@ -14,9 +14,12 @@ public class SongManager : MonoBehaviour
     public float startPosY;
     public float endPosY;
     public float removePosY;
-    public float perfectRankY;
-    public float goodRankY;
-    public float okayRankY;
+    public float perfectRankYBegin;
+    public float perfectRankYEnd;
+    public float goodRankYBegin;
+    public float goodRankYEnd;
+    public float okayRankYBegin;
+    public float okayRankYEnd;
     public static float bpm;
     // the current position of the song in seconds
     public static float songPosition;
@@ -49,7 +52,7 @@ public class SongManager : MonoBehaviour
 
             float noteHitPos = Mathf.Abs(frontNote.gameObject.transform.position.y - endPosY);
 
-            if (noteHitPos < perfectRankY)
+            if (noteHitPos < perfectRankYBegin && noteHitPos > perfectRankYEnd)
             {
                 frontNote.Perfect();
 
@@ -60,7 +63,7 @@ public class SongManager : MonoBehaviour
 
                 queueForTracks[trackNumber].Dequeue();
             }
-            else if (noteHitPos < goodRankY)
+            else if (noteHitPos < goodRankYBegin && noteHitPos > goodRankYEnd )
             {
                 frontNote.Good();
 
@@ -71,7 +74,7 @@ public class SongManager : MonoBehaviour
 
                 queueForTracks[trackNumber].Dequeue();
             }
-            else if (noteHitPos < okayRankY)
+            else if (noteHitPos < okayRankYBegin && noteHitPos > okayRankYEnd)
             {
                 frontNote.Okay();
 
@@ -152,7 +155,7 @@ public class SongManager : MonoBehaviour
 
             MusicNoteController currentNote = queueForTracks[i].Peek();
 
-            if (currentNote.transform.position.y <= endPosY - goodRankY)
+            if (currentNote.transform.position.y <= endPosY - goodRankYEnd)
             {
                 queueForTracks[i].Dequeue();
 

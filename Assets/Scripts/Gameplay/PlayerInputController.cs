@@ -9,20 +9,16 @@ public class PlayerInputController : MonoBehaviour
 
     public Sprite defaultImage;
     public Sprite pressedImage;
-    public Sprite defaultLight;
-    public Sprite pressedLight;
 
     public KeyCode keyPressed;
 
     private SpriteRenderer buttonRenderer;
-    private SpriteRenderer buttonLight;
     private int trackLength;
 
     // Start is called before the first frame update
     void Start()
     {
         buttonRenderer = GetComponent<SpriteRenderer>();
-        buttonLight = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -31,7 +27,6 @@ public class PlayerInputController : MonoBehaviour
 
         if (Input.GetKeyDown(keyPressed))
         {
-            buttonLight.sprite = pressedLight;
             buttonRenderer.sprite = pressedImage;
             
             if (Input.GetKeyDown(KeyCode.A))
@@ -57,7 +52,6 @@ public class PlayerInputController : MonoBehaviour
         }
         if (Input.GetKeyUp(keyPressed))
         {
-            buttonLight.sprite = defaultLight;
             buttonRenderer.sprite = defaultImage;
         }
 

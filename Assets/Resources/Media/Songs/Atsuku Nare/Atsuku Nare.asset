@@ -16,7 +16,7 @@ MonoBehaviour:
   songID: 0
   collection: 0
   songNum: 0
-  difficulty: 0
+  difficulty: 2
   songTitle: "Atsuku Nare (\u30A2\u30C4\u30AF\u30CA\u30EC)"
   artist: "Franchouchou (\u30D5\u30E9\u30F3\u30B7\u30E5\u30B7\u30E5)"
   album: ZOMBIE LAND SAGA SAGA.1 SP
@@ -28,25 +28,40 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  songOffset: 0.44
-  bpm: 128
+  songOffset: -0.44
+  bpm: 128.03
   tracks:
   - notes:
-    - note: 1.64
-    - note: 4.16
-    - note: 5.11
-    - note: 6.08
-    - note: 6.73
-    - note: 12
-    - note: 14
-    - note: 16
-    - note: 18
-    - note: 20
-    - note: 22
-    - note: 24
-    - note: 26
-    - note: 28
-    - note: 30
+    - note: 2.896066
+    - note: 5.354242
+    - note: 6.264678
+    - note: 7.175113
+    - note: 7.85794
+    - note: 15.64216
+    - note: 18.2369
+    - note: 19.10182
+    - note: 20.01225
+    - note: 20.69508
+    - note: 28.4793
+    - note: 30.93748
+    - note: 31.89344
+    - note: 32.75835
+    - note: 33.44118
+    - note: 36.08144
+    - note: 37.0374
+    - note: 37.85679
+    - note: 38.63066
+    - note: 43.7291
+    - note: 46.27832
+    - note: 55.24611
+    - note: 63.30346
+    - note: 71.22425
+    - note: 75.13912
+    - note: 79.19056
+    - note: 81.28456
+    - note: 83.242
+    - note: 85.29048
+    - note: 87.2024
   - notes: []
   - notes: []
   - notes: []
