@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CodeMonkey.Utils; //free utils offered by codemonkey
 
 public class GameHandler : MonoBehaviour {
 
