@@ -43,6 +43,8 @@ public class SongManager : MonoBehaviour
     private int[] trackNextIndices;
     private int length;
 
+    public GameObject perfectPop;
+
 
     void PlayerInput(int trackNumber)
     {
@@ -59,6 +61,10 @@ public class SongManager : MonoBehaviour
                 if (onHitEvent != null)
                 {
                     onHitEvent(trackNumber, Rank.PERFECT);
+                }
+                if (perfectPop)
+                {
+                    perfectPop.SetActive(true);
                 }
 
                 queueForTracks[trackNumber].Dequeue();
