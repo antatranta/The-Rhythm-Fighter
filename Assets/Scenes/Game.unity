@@ -800,13 +800,13 @@ MonoBehaviour:
   startPosY: 500
   endPosY: -350
   removePosY: -500
-  perfectRankYBegin: 0
-  perfectRankYEnd: 0
-  goodRankYBegin: 0
-  goodRankYEnd: 0
-  okayRankYBegin: 0
+  perfectRankYBegin: 30
+  perfectRankYEnd: 20
+  goodRankYBegin: 40
+  goodRankYEnd: 10
+  okayRankYBegin: 50
   okayRankYEnd: 0
-  songInfo: {fileID: 11400000, guid: 0275076146716354aaead3476a651619, type: 2}
+  songInfo: {fileID: 11400000, guid: dade82aa7b39b3449a568b796a7e6d17, type: 2}
 --- !u!82 &600293706
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1244,7 +1244,6 @@ RectTransform:
   - {fileID: 1973364761}
   - {fileID: 1702551059}
   - {fileID: 608814450}
-  - {fileID: 2118946738}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1978,47 +1977,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2118946736
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2118946738}
-  - component: {fileID: 2118946737}
-  m_Layer: 0
-  m_Name: GameHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2118946737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118946736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6da68fdbc29104498109291ab000b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 608814449}
---- !u!4 &2118946738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118946736}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1229, y: 0, z: -125.479385}
-  m_LocalScale: {x: 1.2674686, y: 1.2674686, z: 1.2674686}
-  m_Children: []
-  m_Father: {fileID: 927248588}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
