@@ -25,7 +25,7 @@ public class GameHandler : MonoBehaviour {
             if (health < .3f)
             {
                 //Bar flashes white under 30% health
-                if ((int)(health * 100f) % 3 == 0)
+                if ((int)(health * 100f) % 5 == 0)
                 {
                     healthBar.SetColor(Color.white);
                 }
