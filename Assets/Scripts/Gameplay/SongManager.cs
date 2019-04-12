@@ -69,7 +69,7 @@ public class SongManager : MonoBehaviour
 
                 queueForTracks[trackNumber].Dequeue();
             }
-            else if (noteHitPos < goodRankYBegin && noteHitPos > goodRankYEnd )
+            else if (noteHitPos < goodRankYBegin && noteHitPos > goodRankYEnd)
             {
                 frontNote.Good();
 
@@ -168,7 +168,6 @@ public class SongManager : MonoBehaviour
                 if (onHitEvent != null)
                 {
                     onHitEvent(i, Rank.MISS);
-                    healthUpdate.Decrement(); //Missed Note decrement healthbar
                 }
             }
         }

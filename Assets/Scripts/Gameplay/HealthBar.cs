@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthBar : MonoBehaviour {
-
+    
     private Transform bar;
 
 	private void Awake () {
@@ -17,4 +17,5 @@ public class HealthBar : MonoBehaviour {
     public void SetColor(Color color) {
         bar.Find("BarSprite").GetComponent<SpriteRenderer>().color = color;
     }
+    
 }

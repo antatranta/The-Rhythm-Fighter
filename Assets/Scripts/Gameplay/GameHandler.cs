@@ -5,34 +5,52 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour {
 
     //Serialized field will show in the inspector
-    [SerializeField] private HealthBar healthBar; 
+    [SerializeField] private HealthBar healthBar;
+
     public float health = 1f;
+
+    void Start()
+    {
+        SongManager.onHitEvent += decrementHealth;
+     }
+   
     
-
-	private void Start () {
-
+    void Update()
+    {
         //Health Color Display 
-        if (health > .01f) {
-            health -= .01f;
+        if (health > .01f)
+        {
             healthBar.SetSize(health);
             //Under 30% health
-            if (health < .3f) {
+            if (health < .3f)
+            {
                 //Bar flashes white under 30% health
-                if ((int)(health * 100f) % 3 == 0) {
+                if ((int)(health * 100f) % 3 == 0)
+                {
                     healthBar.SetColor(Color.white);
-                } else {
+                }
+                else
+                {
                     healthBar.SetColor(Color.red);
                 }
             }
-        } else {
+        }
+        else
+        {
             health = 1f;
             healthBar.SetColor(Color.red);
         }
     }
-    public void Decrement()
+    
+    //Healthbar update related to missing notes
+    void decrementHealth(int trackNumber, SongManager.Rank rank)
     {
-        health -= .01f;
-        healthBar.SetSize(health);
+        if (health > 0.1f && rank == SongManager.Rank.MISS)
+        {
+            health -= .05f;
+            healthBar.SetSize(health);
+        }
+        
     }
     
 }
