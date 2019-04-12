@@ -13,7 +13,6 @@ public class PlayerInputController : MonoBehaviour
     public KeyCode keyPressed;
 
     private SpriteRenderer buttonRenderer;
-    private int trackLength;
 
     // Start is called before the first frame update
     void Start()
