@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 public class SongManager : MonoBehaviour
@@ -20,6 +21,10 @@ public class SongManager : MonoBehaviour
     public float goodRankYEnd;
     public float okayRankYBegin;
     public float okayRankYEnd;
+    // display countdown at the beginning of a song to ready player
+    public GameObject countDownCanvas;
+    public TMPro.TextMeshProUGUI countDownText;
+    // the bpm of the song
     public static float bpm;
     // the current position of the song in seconds
     public static float songPosition;
@@ -33,6 +38,8 @@ public class SongManager : MonoBehaviour
     public GameHandler healthUpdate;
 
     public SongInfo songInfo;
+
+    // grab the tracks from the SongInfo
     private SongInfo.Track[] tracks;
     // how much time has passed since the song started
     private float dspTimeSong;
@@ -42,10 +49,13 @@ public class SongManager : MonoBehaviour
     // index for each track
     private int[] trackNextIndices;
     private int length;
+    // beginning countdown when starting the song
+    private const int countDown = 3;
+    private bool songStarted = false;
 
     public GameObject perfectPop;
 
-
+    // Event handler when an input is inputted from playerinputcontroller
     void PlayerInput(int trackNumber)
     {
         if (queueForTracks[trackNumber].Count != 0)
@@ -95,8 +105,11 @@ public class SongManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
+        // display countdown canvas
+        countDownCanvas.SetActive(true);
+
         // listens to player input
         PlayerInputController.inputtedEvent += PlayerInput;
 
@@ -118,14 +131,44 @@ public class SongManager : MonoBehaviour
         song = GetComponent<AudioSource>();
         song.clip = songInfo.song;
 
+        // start the coroutine for countdown
+        StartCoroutine(CountDown());
+    }
+
+    // Coroutine method for drawing the countdown text
+    IEnumerator CountDown()
+    {
+        yield return new WaitForSeconds(1);
+
+        for (int i = countDown; i > 0; i--)
+        {
+            countDownText.text = i.ToString();
+
+            yield return new WaitForSeconds(1);
+        }
+
+        countDownCanvas.SetActive(false);
+
+        StartSong();
+    }
+
+    void StartSong()
+    {
         dspTimeSong = (float)AudioSettings.dspTime;
 
         song.Play();
+
+        songStarted = true;
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
+        if (!songStarted)
+        {
+            return;
+        }
+
         songPosition = (float)(AudioSettings.dspTime - dspTimeSong) * song.pitch - songInfo.songOffset;
 
         songPosInBeats = songPosition / secPerBeat;
