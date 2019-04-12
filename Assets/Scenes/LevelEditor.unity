@@ -697,10 +697,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPosX:
   - -800
-  - 0
-  - 0
-  - 0
-  - 0
+  - -620
+  - -445
+  - -265
+  - -85
   startPosY: 500
   endPosY: -350
   removePosY: -500
@@ -710,7 +710,9 @@ MonoBehaviour:
   goodRankYEnd: 10
   okayRankYBegin: 50
   okayRankYEnd: 0
-  songInfo: {fileID: 11400000, guid: dade82aa7b39b3449a568b796a7e6d17, type: 2}
+  healthUpdate: {fileID: 0}
+  songInfo: {fileID: 11400000, guid: c5a00a8d3c8ff7849959e5df179b3a8b, type: 2}
+  perfectPop: {fileID: 0}
 --- !u!82 &706645674
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1719,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3d91a42f3042f46b4affd44012eede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: Song_of_Storms
+  fileName: Lost_Woods
 --- !u!4 &1988478445
 Transform:
   m_ObjectHideFlags: 0
