@@ -53,12 +53,6 @@ public class PlayerInputController : MonoBehaviour
         {
             buttonRenderer.sprite = defaultImage;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("User has paused the game!");
-            // handle pause
-        }
     }
 
     void Inputted(int i)

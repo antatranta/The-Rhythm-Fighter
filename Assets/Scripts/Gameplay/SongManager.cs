@@ -21,6 +21,7 @@ public class SongManager : MonoBehaviour
     public float goodRankYEnd;
     public float okayRankYBegin;
     public float okayRankYEnd;
+    public static bool paused;
     // display countdown at the beginning of a song to ready player
     public GameObject countDownCanvas;
     public TMPro.TextMeshProUGUI countDownText;
@@ -34,8 +35,6 @@ public class SongManager : MonoBehaviour
     public static float secPerBeat;
     // number of of beats/notes shown on screen
     public static float beatsShownOnScreen = 5f;
-
-    public GameHandler healthUpdate;
 
     public SongInfo songInfo;
 
@@ -51,9 +50,11 @@ public class SongManager : MonoBehaviour
     private int length;
     // beginning countdown when starting the song
     private const int countDown = 3;
-    private bool songStarted = false;
-
-    public GameObject perfectPop;
+    private bool songStarted;
+    // pause time stamp used as the timing of when the pause happened
+    private float pauseTimeStamp;
+    // calculate how long the song has been on paused
+    private float pausedTime;
 
     // Event handler when an input is inputted from playerinputcontroller
     void PlayerInput(int trackNumber)
@@ -71,10 +72,6 @@ public class SongManager : MonoBehaviour
                 if (onHitEvent != null)
                 {
                     onHitEvent(trackNumber, Rank.PERFECT);
-                }
-                if (perfectPop)
-                {
-                    perfectPop.SetActive(true);
                 }
 
                 queueForTracks[trackNumber].Dequeue();
@@ -107,6 +104,12 @@ public class SongManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // always reset these variables on start
+        paused = true;
+        pauseTimeStamp = -1f;
+        pausedTime = 0f;
+        songStarted = false;
+
         // display countdown canvas
         countDownCanvas.SetActive(true);
 
@@ -158,6 +161,7 @@ public class SongManager : MonoBehaviour
 
         song.Play();
 
+        paused = false;
         songStarted = true;
     }
 
@@ -169,7 +173,27 @@ public class SongManager : MonoBehaviour
             return;
         }
 
-        songPosition = (float)(AudioSettings.dspTime - dspTimeSong) * song.pitch - songInfo.songOffset;
+        if (paused)
+        {
+            if (pauseTimeStamp < 0f)
+            {
+                pauseTimeStamp = (float)AudioSettings.dspTime;
+
+                song.Pause();
+            }
+
+            return;
+        }
+        else if (pauseTimeStamp > 0f)
+        {
+            pausedTime += (float)AudioSettings.dspTime - pauseTimeStamp;
+
+            song.Play();
+
+            pauseTimeStamp = -1f;
+        }
+
+        songPosition = (float)(AudioSettings.dspTime - dspTimeSong - pausedTime) * song.pitch - songInfo.songOffset;
 
         songPosInBeats = songPosition / secPerBeat;
 

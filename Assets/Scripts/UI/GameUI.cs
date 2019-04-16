@@ -10,6 +10,26 @@ public class GameUI : MonoBehaviour
 
     public GameObject pauseScreen;
 
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!SongManager.paused)
+            {
+                PauseOnKeyPress();
+            }
+            else
+            {
+                ResumeOnKeyPress();
+            }
+        }
+    }
+
     public void PauseOnKeyPress()
     {
         pauseScreen.SetActive(true);
