@@ -9,6 +9,7 @@ public class GameUI : MonoBehaviour
     public HealthBar healthBar;
 
     public GameObject pauseScreen;
+    public GameObject optionScreen;
 
     void Start()
     {
@@ -17,7 +18,7 @@ public class GameUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !optionScreen.activeSelf && !SongManager.paused)
         {
             if (!SongManager.paused)
             {
