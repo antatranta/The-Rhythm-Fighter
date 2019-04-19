@@ -1324,8 +1324,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_PressedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_HighlightedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1339,7 +1339,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 309466149}
+  m_TargetGraphic: {fileID: 1438760729}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2907,12 +2907,12 @@ MonoBehaviour:
   startPosY: 500
   endPosY: -350
   removePosY: -500
-  perfectRankYBegin: 30
-  perfectRankYEnd: 20
-  goodRankYBegin: 40
-  goodRankYEnd: 10
-  okayRankYBegin: 50
-  okayRankYEnd: 0
+  perfectRankYBegin: 48
+  perfectRankYEnd: 2
+  goodRankYBegin: 58
+  goodRankYEnd: -8
+  okayRankYBegin: 68
+  okayRankYEnd: -18
   countDownCanvas: {fileID: 1276680623}
   countDownText: {fileID: 155169164}
   songInfo: {fileID: 11400000, guid: c5a00a8d3c8ff7849959e5df179b3a8b, type: 2}
@@ -3323,8 +3323,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_PressedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_HighlightedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3338,7 +3338,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 663530839}
+  m_TargetGraphic: {fileID: 603159993}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3536,7 +3536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.150001}
+  m_AnchoredPosition: {x: 0, y: -15.150002}
   m_SizeDelta: {x: 0, y: 30.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &779254143
@@ -3897,8 +3897,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_PressedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_HighlightedColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3912,7 +3912,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 841060115}
+  m_TargetGraphic: {fileID: 2052997161}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
