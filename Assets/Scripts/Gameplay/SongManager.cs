@@ -11,6 +11,9 @@ public class SongManager : MonoBehaviour
     public delegate void OnHitAction(int trackNumber, Rank rank);
     public static event OnHitAction onHitEvent;
 
+    public delegate void SongCompleted();
+    public static event SongCompleted songCompletedEvent;
+
     public float[] spawnPosX;
     public float startPosY;
     public float endPosY;
@@ -55,6 +58,8 @@ public class SongManager : MonoBehaviour
     private float pauseTimeStamp;
     // calculate how long the song has been on paused
     private float pausedTime;
+    // the song's length
+    private float songLength;
 
     // Event handler when an input is inputted from playerinputcontroller
     void PlayerInput(int trackNumber)
@@ -133,6 +138,7 @@ public class SongManager : MonoBehaviour
         // songInfo from UI selection
         song = GetComponent<AudioSource>();
         song.clip = songInfo.song;
+        songLength = songInfo.song.length;
 
         // start the coroutine for countdown
         StartCoroutine(CountDown());
@@ -236,6 +242,14 @@ public class SongManager : MonoBehaviour
                 {
                     onHitEvent(i, Rank.MISS);
                 }
+            }
+        }
+
+        if (songPosition > songLength) {
+            songStarted = false;
+
+            if (songCompletedEvent != null) {
+                songCompletedEvent();
             }
         }
     }

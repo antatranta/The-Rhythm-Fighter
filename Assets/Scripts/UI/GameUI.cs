@@ -10,10 +10,11 @@ public class GameUI : MonoBehaviour
 
     public GameObject pauseScreen;
     public GameObject optionScreen;
+    public GameObject winScreen;
 
     void Start()
     {
-
+        SongManager.songCompletedEvent += YouWin;
     }
 
     void Update()
@@ -43,5 +44,10 @@ public class GameUI : MonoBehaviour
         pauseScreen.SetActive(false);
 
         SongManager.paused = false;
+    }
+
+    void YouWin() 
+    {
+        winScreen.SetActive(true);
     }
 }
