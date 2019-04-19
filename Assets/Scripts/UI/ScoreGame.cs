@@ -18,9 +18,9 @@ public class ScoreGame : MonoBehaviour
         SongManager.onHitEvent += incrementScore;
     }
 
-    void timeScore() //Add score continously over time (time based)
+    void timeScore() //Add score continously over time (time-based)
     {
-        TheScore += 1;
+        //TheScore += 1;
         //Reference object from earlier
         ScoreDisplay.GetComponent<Text>().text = "Score: " + TheScore.ToString();
     }
@@ -30,17 +30,17 @@ public class ScoreGame : MonoBehaviour
     {
         if (rank == SongManager.Rank.PERFECT)
         {
-            TheScore += 20;
+            TheScore += 300;
             ScoreDisplay.GetComponent<Text>().text = "Score: " + TheScore.ToString();
         }
         else if (rank == SongManager.Rank.GOOD)
         {
-            TheScore += 10;
+            TheScore += 200;
             ScoreDisplay.GetComponent<Text>().text = "Score: " + TheScore.ToString();
         }
         else if (rank == SongManager.Rank.OKAY)
         {
-            TheScore += 5;
+            TheScore += 100;
             ScoreDisplay.GetComponent<Text>().text = "Score: " + TheScore.ToString();
         }
 
