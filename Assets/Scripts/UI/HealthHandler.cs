@@ -45,15 +45,12 @@ public class HealthHandler : MonoBehaviour {
     //Healthbar update related to missing notes
     void decrementHealth(int trackNumber, SongManager.Rank rank)
     {
-        if (health > 0.1f && rank == SongManager.Rank.MISS)
+        if (health > 0f && rank == SongManager.Rank.MISS)
         {
             health -= .03f;
             healthBar.SetSize(health);
         }
         
-<<<<<<< HEAD:Assets/Scripts/UI/GameHandler.cs
     }
-=======
-    } 
->>>>>>> 52ae44ab0f52a3757266c15ec189540c3dad0572:Assets/Scripts/UI/HealthHandler.cs
+
 }

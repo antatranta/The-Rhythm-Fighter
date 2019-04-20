@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreGame : MonoBehaviour
 {
 
-    public static int TheScore; //static var can be referenced from another script
+    public int TheScore; //static var can be referenced from another script
     [SerializeField] public GameObject ScoreDisplay; //variable to display score
 
     //Use this for initialization
