@@ -29,15 +29,8 @@ MonoBehaviour:
     - note: 6.302263
     - note: 8.194143
     - note: 10.13589
-    - note: 11.52997
-    - note: 12.02785
-    - note: 13.0237
-    - note: 13.5713
-    - note: 14.11905
-    - note: 14.56714
     - note: 15.11482
     - note: 17.55445
-    - note: 18.10212
     - note: 18.6498
     - note: 19.19747
     - note: 22.03541
@@ -109,9 +102,16 @@ MonoBehaviour:
     - note: 6.700571
     - note: 8.692108
     - note: 10.58407
+    - note: 14.56714
+    - note: 18.10212
   - notes:
     - note: 7.198455
     - note: 9.140204
     - note: 11.08195
-  - notes: []
-  - notes: []
+    - note: 14.11905
+  - notes:
+    - note: 11.52997
+    - note: 13.5713
+  - notes:
+    - note: 12.02785
+    - note: 13.0237

@@ -24,10 +24,6 @@ public class SongManager : MonoBehaviour
     public float goodRankYEnd;
     public float okayRankYBegin;
     public float okayRankYEnd;
-    public static bool paused;
-    // display countdown at the beginning of a song to ready player
-    public GameObject countDownCanvas;
-    public TMPro.TextMeshProUGUI countDownText;
     // the bpm of the song
     public static float bpm;
     // the current position of the song in seconds
@@ -38,7 +34,14 @@ public class SongManager : MonoBehaviour
     public static float secPerBeat;
     // number of of beats/notes shown on screen
     public static float beatsShownOnScreen = 5f;
+    public static bool paused;
+    public static bool songStarted;
+    // the song's length
+    public static float songLength;
 
+    // display countdown at the beginning of a song to ready player
+    public GameObject countDownCanvas;
+    public TMPro.TextMeshProUGUI countDownText;
     public SongInfo songInfo;
 
     // grab the tracks from the SongInfo
@@ -53,13 +56,10 @@ public class SongManager : MonoBehaviour
     private int length;
     // beginning countdown when starting the song
     private const int countDown = 3;
-    private bool songStarted;
     // pause time stamp used as the timing of when the pause happened
     private float pauseTimeStamp;
     // calculate how long the song has been on paused
     private float pausedTime;
-    // the song's length
-    private float songLength;
 
     // Event handler when an input is inputted from playerinputcontroller
     void PlayerInput(int trackNumber)
@@ -254,7 +254,7 @@ public class SongManager : MonoBehaviour
         }
     }
 
-    private void OnDestroy() 
+    void OnDestroy() 
     {
         PlayerInputController.inputtedEvent -= PlayerInput;
     }

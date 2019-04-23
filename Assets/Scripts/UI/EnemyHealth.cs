@@ -60,6 +60,5 @@ public class EnemyHealth : MonoBehaviour
             health -= .05f;
             healthBar.SetSize(health);
         }
-
     }
 }

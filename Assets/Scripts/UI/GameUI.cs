@@ -27,7 +27,7 @@ public class GameUI : MonoBehaviour
             YouLose();
             return;
         }
-        if (Input.GetKeyDown(KeyCode.Escape) && !optionScreen.activeSelf && !SongManager.paused)
+        if (Input.GetKeyDown(KeyCode.Escape) && !optionScreen.activeSelf && SongManager.songStarted)
         {
             if (!SongManager.paused)
             {
@@ -71,5 +71,10 @@ public class GameUI : MonoBehaviour
 
         SceneManager.LoadScene("LoseScreen");
         return;
+    }
+
+    void OnDestroy() 
+    {
+        SongManager.songCompletedEvent -= YouWin;
     }
 }

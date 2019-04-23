@@ -12,7 +12,7 @@ public class HealthHandler : MonoBehaviour {
     void Start()
     {
         healthBar = GetComponent<HealthBar>();
-        SongManager.onHitEvent += decrementHealth;
+        SongManager.onHitEvent += DecrementHealth;
     }
     
     void Update()
@@ -43,14 +43,29 @@ public class HealthHandler : MonoBehaviour {
     }
     
     //Healthbar update related to missing notes
-    void decrementHealth(int trackNumber, SongManager.Rank rank)
+    void DecrementHealth(int trackNumber, SongManager.Rank rank)
     {
         if (health > 0f && rank == SongManager.Rank.MISS)
         {
-            health -= .03f;
-            healthBar.SetSize(health);
+            health -= .05f;
         }
-        
+        else if (health < 1f && rank == SongManager.Rank.OKAY) 
+        {
+            health += .01f;
+        }
+        else if (health < 1f && rank == SongManager.Rank.GOOD)
+        {
+            health += .025f;
+        }
+        else if (health < 1f && rank == SongManager.Rank.PERFECT)
+        {
+            health += .05f;
+        }
+        healthBar.SetSize(health);
     }
-
+    
+    void OnDestroy() 
+    {
+        SongManager.onHitEvent -= DecrementHealth;
+    }
 }
