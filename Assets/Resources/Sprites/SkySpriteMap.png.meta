@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: a4630858f76d3eb41b2cecaef3aff1cc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sky_Blue_1
+    21300002: Sky_Blue_2
+    21300004: Sky_Purple_1
+    21300006: Sky_Pink_1
+    21300008: Sky_Purple_2
+    21300010: Sky_Tan_1
+    21300012: Sky_Red_1
+    21300014: Sky_Orange_1
+    21300016: Sky_Blue_3
+    21300018: Sky_Black_1
+    21300020: Sky_Blue_4
+    21300022: Sky_Blue_5
+    21300024: Sky_Blue_5
+    21300026: Sky_Black_2
+    21300028: Sky_Black_3
+    21300030: Sky_Gray_1
+    21300032: Sky_Blue_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sky_Blue_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Blue_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Purple_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Pink_1
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Purple_2
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Tan_1
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Red_1
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Orange_1
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Blue_3
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Black_1
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Blue_4
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Blue_5
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Blue_6
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Black_2
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Black_3
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sky_Gray_1
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 0
+        width: 100
+        height: 2048
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
