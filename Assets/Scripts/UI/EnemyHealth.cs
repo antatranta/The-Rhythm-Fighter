@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -20,6 +21,18 @@ public class EnemyHealth : MonoBehaviour
         //Health Color Display 
         if (health > .01f)
         {
+            float temp_health = 1.0f - SongManager.songPosition / SongManager.songLength; //for constant decrease, change temp_health to health
+            //Decreases Enemy HP bar based on position of song. 1/8 each time
+            if (temp_health <= health - 0.125f)
+            {
+                health = temp_health;
+            }
+            else if (temp_health <= 0.01f)
+            {
+                health = 0;
+            }
+            // health = 1.0f - SongManager.songPosition / SongManager.songLength;
+            //Debug.Log(health);
             healthBar.SetSize(health);
             //Under 30% health
             if (health < .3f)
@@ -42,10 +55,9 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    //Healthbar update to player hitting notes
     void decrementHealth(int trackNumber, SongManager.Rank rank)
     {
-        if (health > 0.1f && rank == SongManager.Rank.PERFECT)
+        /*if (health > 0.1f && rank == SongManager.Rank.PERFECT)
         {
             health -= .2f;
             healthBar.SetSize(health);
@@ -59,6 +71,7 @@ public class EnemyHealth : MonoBehaviour
         {
             health -= .05f;
             healthBar.SetSize(health);
-        }
+        }*/
+        
     }
 }
