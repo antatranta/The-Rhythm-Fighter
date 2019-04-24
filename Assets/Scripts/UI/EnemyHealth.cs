@@ -22,8 +22,8 @@ public class EnemyHealth : MonoBehaviour
         if (health > .01f)
         {
             float temp_health = 1.0f - SongManager.songPosition / SongManager.songLength; //for constant decrease, change temp_health to health
-            //Decreases Enemy HP bar based on position of song. 1/8 each time
-            if (temp_health <= health - 0.125f)
+            //Decreases Enemy HP bar based on position of song. 1/4 each time
+            if (temp_health <= health - 0.250f)
             {
                 health = temp_health;
             }
