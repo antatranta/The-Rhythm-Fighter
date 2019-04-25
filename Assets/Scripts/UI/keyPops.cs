@@ -19,28 +19,36 @@ public class keyPops : MonoBehaviour
     {
         if (rank == SongManager.Rank.PERFECT)
         {
-            text.text = "Perfect!";
+            text.text = "PERFECT!";
             text.enabled = true;
         }
         else if (rank == SongManager.Rank.GOOD)
         {
-            text.text = "Good!";
+            text.text = "GOOD!";
             text.enabled = true;
         }
         else if (rank == SongManager.Rank.OKAY)
         {
-            text.text = "Okay!";
+            text.text = "OKAY!";
             text.enabled = true;
         }
         else if (rank == SongManager.Rank.MISS)
         {
-            text.text = "Missed!";
+            text.text = "MISS!";
             text.enabled = true;
+            
         }
+
+        StartCoroutine(PopUpDelay());
     }
 
-    void Update()
+    IEnumerator PopUpDelay()
     {
+        yield return new WaitForSecondsRealtime(1);
         text.enabled = false;
+    }
+
+    void OnDestroy() {
+        SongManager.onHitEvent -= showPopup;
     }
 }
