@@ -21,7 +21,7 @@ MonoBehaviour:
   artist: 
   album: Legend of Zelda
   collectionTitle: Legend of Zelda
-  songImage: {fileID: 0}
+  songImage: {fileID: 21300000, guid: b9a3f593e47139a408140657b04979d3, type: 3}
   songOffset: -0.375
   bpm: 140.03
   tracks:

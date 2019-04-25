@@ -21,7 +21,7 @@ MonoBehaviour:
   artist: BlueSCD
   album: Legend of Zelda
   collectionTitle: Legend of Zelda
-  songImage: {fileID: 0}
+  songImage: {fileID: 21300000, guid: ccd77a2c93f23b746bc11fdd7177ad47, type: 3}
   songOffset: -0.4
   bpm: 98.77
   tracks:
