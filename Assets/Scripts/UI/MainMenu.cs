@@ -7,7 +7,9 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame() 
     {
-        SceneManager.LoadScene("SongSelection");
+        //SceneManager.LoadScene("SongSelection");
+        // temporary
+        SceneManager.LoadScene("Game");
     }
 
     public void QuitGame()
