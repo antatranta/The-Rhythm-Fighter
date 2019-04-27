@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using System;
 
 public class SongInfoMessenger : MonoBehaviour
@@ -16,5 +15,4 @@ public class SongInfoMessenger : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-
 }
