@@ -3136,7 +3136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notePrefab: {fileID: 6592421795551206974, guid: 0763f713265cfd347845fa9a473bbed7,
     type: 3}
-  initialAmount: 30
+  initialAmount: 20
 --- !u!114 &600293705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,7 +3166,7 @@ MonoBehaviour:
   okayRankYEnd: -18
   countDownCanvas: {fileID: 1276680623}
   countDownText: {fileID: 155169164}
-  songInfo: {fileID: 11400000, guid: c5a00a8d3c8ff7849959e5df179b3a8b, type: 2}
+  songInfo: {fileID: 11400000, guid: dade82aa7b39b3449a568b796a7e6d17, type: 2}
 --- !u!82 &600293706
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6736,6 +6736,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene Transition
+      objectReference: {fileID: 0}
+    - target: {fileID: 9128287190802183838, guid: 6220ca9798cece0458760d13a73b1236,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9128287190802183836, guid: 6220ca9798cece0458760d13a73b1236,
         type: 3}
