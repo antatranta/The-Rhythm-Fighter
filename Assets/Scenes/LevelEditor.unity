@@ -6797,7 +6797,7 @@ MonoBehaviour:
   okayRankYEnd: -18
   countDownCanvas: {fileID: 605625039}
   countDownText: {fileID: 668965759}
-  songInfo: {fileID: 11400000, guid: dade82aa7b39b3449a568b796a7e6d17, type: 2}
+  songInfo: {fileID: 11400000, guid: 0275076146716354aaead3476a651619, type: 2}
 --- !u!82 &1551858918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8644,7 +8644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1988478444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8657,7 +8657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3d91a42f3042f46b4affd44012eede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: Song_of_Storms
+  fileName: Atsuku_Nare_1
 --- !u!4 &1988478445
 Transform:
   m_ObjectHideFlags: 0

@@ -68,7 +68,7 @@ public class SongManager : MonoBehaviour
         {
             MusicNoteController frontNote = queueForTracks[trackNumber].Peek();
 
-            float noteHitPos = Mathf.Abs(frontNote.gameObject.transform.position.y - endPosY);
+            float noteHitPos = frontNote.gameObject.transform.position.y - endPosY;
 
             if (noteHitPos < perfectRankYBegin && noteHitPos > perfectRankYEnd)
             {
