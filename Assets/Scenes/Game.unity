@@ -4663,9 +4663,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthbar: {fileID: 1913955677}
+  healthbar2: {fileID: 2018371614}
   pauseScreen: {fileID: 1286593254}
   optionScreen: {fileID: 1127696532}
-  winScreen: {fileID: 0}
   score: {fileID: 1694926193}
 --- !u!1 &969653940
 GameObject:
