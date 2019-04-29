@@ -8,10 +8,10 @@ using System.IO;
 public class GameUI : MonoBehaviour 
 {
     public HealthHandler healthbar;
+    public EnemyHealth healthbar2;
 
     public GameObject pauseScreen;
     public GameObject optionScreen;
-    public GameObject winScreen;
 
     public ScoreGame score;
 
@@ -25,6 +25,11 @@ public class GameUI : MonoBehaviour
         if (healthbar.health <= 0f)
         {
             YouLose();
+            return;
+        }
+        if (healthbar2.health <= 0f)
+        {
+            YouWin();
             return;
         }
         if (Input.GetKeyDown(KeyCode.Escape) && !optionScreen.activeSelf && SongManager.songStarted)
@@ -54,9 +59,18 @@ public class GameUI : MonoBehaviour
         SongManager.paused = false;
     }
 
-    void YouWin() 
+    public void YouWin() 
     {
-        winScreen.SetActive(true);
+        FileStream fileStream = File.Open("scoreTemp.data", FileMode.Open); //Flush File 
+        fileStream.SetLength(0);
+        fileStream.Close();
+
+        StreamWriter OurFile = File.CreateText("scoreTemp.data");
+        OurFile.WriteLine("" + score.TheScore);
+        OurFile.Close();
+
+        SceneManager.LoadScene("WinScreen");
+        return;
     }
 
     public void YouLose()
