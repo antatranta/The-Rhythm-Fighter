@@ -22,6 +22,8 @@ public class backgroundvideo : MonoBehaviour
         // Let's target the near plane instead.
         videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
 
+        videoPlayer.aspectRatio = UnityEngine.Video.VideoAspectRatio.Stretch;
+
         // This will cause our Scene to be visible through the video being played.
         videoPlayer.targetCameraAlpha = 0.5F;
 
