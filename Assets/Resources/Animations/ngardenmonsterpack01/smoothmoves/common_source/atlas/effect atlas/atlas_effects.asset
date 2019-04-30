@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_effects
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: dd155db8c17f45041a163bd97f36dada, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0.7626953
+    y: 0.21875
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.86083984
+    y: 0.21875
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.81640625
+    y: 0
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0
+    y: 0.2709961
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.35205078
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.390625
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0
+    y: 0.4897461
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0
+    y: 0.7084961
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.45751953
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.51464844
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.6386719
+    y: 0.21875
+    width: 0.123535156
+    height: 0.1328125
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.5629883
+    width: 0.09765625
+    height: 0.10498047
+  - serializedVersion: 2
+    x: 0.4560547
+    y: 0
+    width: 0.18896484
+    height: 0.21826172
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.26611328
+    height: 0.2705078
+  - serializedVersion: 2
+    x: 0.26660156
+    y: 0.66845703
+    width: 0.09375
+    height: 0.09765625
+  - serializedVersion: 2
+    x: 0.6455078
+    y: 0
+    width: 0.17041016
+    height: 0.1772461
+  textureGUIDs:
+  - 0399efd721ba80f469161de6aca365b3
+  - 083cd907ba2289b48996f65ddd2d5229
+  - 417b92ded6c70ca4d88ef8452aac4b8a
+  - 45e2a5da1aee2db40a865c20fde89b6b
+  - 50dffc3b156466a42bf6204ac3ce1e10
+  - 66829c1973b32114eb7c8ef0312be57b
+  - 74f0e4893d2fad44cbf96c128462f137
+  - 7e4479bf5d03901449c3b55e9bb1c7a1
+  - 93835a284bfcf7047870948453a32487
+  - 946889585f79af649af31bab77f4e18d
+  - 948186c0bed107241902e7e05768b0db
+  - 9acbc1e7a3a1e4c438a86d2c17f1448c
+  - b202ae1a4272dae48b355d04fee1c5ab
+  - cf99683927196fc42a59aee3b0fa1215
+  - dfa8711bb15dea54d99829561adb2eca
+  - 2c112ca1b64c3fb4191a092db14df565
+  - 8672fb91891da5e46b862cf01115a21b
+  - 895d638a63b62e94b855751e33b26632
+  textureSizes:
+  - {x: 200, y: 215}
+  - {x: 200, y: 215}
+  - {x: 253, y: 272}
+  - {x: 387, y: 447}
+  - {x: 200, y: 215}
+  - {x: 253, y: 272}
+  - {x: 253, y: 272}
+  - {x: 387, y: 447}
+  - {x: 387, y: 447}
+  - {x: 387, y: 447}
+  - {x: 200, y: 215}
+  - {x: 253, y: 272}
+  - {x: 253, y: 272}
+  - {x: 200, y: 215}
+  - {x: 387, y: 447}
+  - {x: 545, y: 554}
+  - {x: 192, y: 200}
+  - {x: 349, y: 363}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  textureNames:
+  - 03_effect_leaf_03
+  - 04_effect_light_03
+  - 04_effect_light_01
+  - 02_effect_fire_02
+  - 02_effect_fire_03
+  - 02_effect_fire_01
+  - 01_effect_water_01
+  - 01_effect_water_02
+  - 03_effect_leaf_02
+  - 05_effect_dark_02
+  - 01_effect_water_03
+  - 03_effect_leaf_01
+  - 05_effect_dark_01
+  - 05_effect_dark_03
+  - 04_effect_light_02
+  - 00_effect_shout_01
+  - 00_effect_shout_03
+  - 00_effect_shout_02
+  texturePaths:
+  - Assets/0287_0316/textures/effects/03_effect_leaf_03.png
+  - Assets/0287_0316/textures/effects/04_effect_light_03.png
+  - Assets/0287_0316/textures/effects/04_effect_light_01.png
+  - Assets/0287_0316/textures/effects/02_effect_fire_02.png
+  - Assets/0287_0316/textures/effects/02_effect_fire_03.png
+  - Assets/0287_0316/textures/effects/02_effect_fire_01.png
+  - Assets/0287_0316/textures/effects/01_effect_water_01.png
+  - Assets/0287_0316/textures/effects/01_effect_water_02.png
+  - Assets/0287_0316/textures/effects/03_effect_leaf_02.png
+  - Assets/0287_0316/textures/effects/05_effect_dark_02.png
+  - Assets/0287_0316/textures/effects/01_effect_water_03.png
+  - Assets/0287_0316/textures/effects/03_effect_leaf_01.png
+  - Assets/0287_0316/textures/effects/05_effect_dark_01.png
+  - Assets/0287_0316/textures/effects/05_effect_dark_03.png
+  - Assets/0287_0316/textures/effects/04_effect_light_02.png
+  - Assets/0287_0316/textures/effects/00_effect_shout_01.png
+  - Assets/0287_0316/textures/effects/00_effect_shout_03.png
+  - Assets/0287_0316/textures/effects/00_effect_shout_02.png
+  lastBuildID: 20141212121604672
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

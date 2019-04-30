@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: bb62d05c2e42f73438f5022b204bf12f
+timeCreated: 1525333628
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: atlas_effects 1_0
+    21300002: atlas_effects 1_1
+    21300004: atlas_effects 1_2
+    21300006: atlas_effects 1_3
+    21300008: atlas_effects 1_4
+    21300010: atlas_effects 1_5
+    21300012: atlas_effects 1_6
+    21300014: atlas_effects 1_7
+    21300016: atlas_effects 1_8
+    21300018: atlas_effects 1_9
+    21300020: atlas_effects 1_10
+    21300022: atlas_effects 1_11
+    21300024: atlas_effects 1_12
+    21300026: atlas_effects 1_13
+    21300028: atlas_effects 1_14
+    21300030: atlas_effects 1_15
+    21300032: atlas_effects 1_16
+    21300034: atlas_effects 1_17
+    21300036: atlas_effects 1_18
+    21300038: atlas_effects 1_19
+    21300040: atlas_effects 1_20
+    21300042: atlas_effects 1_21
+    21300044: atlas_effects 1_22
+    21300046: atlas_effects 1_23
+    21300048: atlas_effects 1_24
+    21300050: atlas_effects 1_25
+    21300052: atlas_effects 1_26
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas_effects 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1527
+        width: 173
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1675
+        width: 84
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1079
+        width: 173
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1451
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1367
+        width: 194
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1227
+        width: 84
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1003
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_12
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 447
+        width: 121
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_13
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 447
+        width: 122
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 18
+        width: 512
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_15
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 528
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_16
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 455
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_17
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 455
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_18
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 76
+        width: 176
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_19
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 223
+        width: 83
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_20
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 76
+        width: 177
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_21
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 223
+        width: 86
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_22
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 352
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_23
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 0
+        width: 254
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_24
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 0
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_25
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 0
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_6
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 720
+        width: 201
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 935
+        width: 205
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_26
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1153
+        width: 201
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_effects 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 388
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
