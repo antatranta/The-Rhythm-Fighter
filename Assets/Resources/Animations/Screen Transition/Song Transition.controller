@@ -6,15 +6,9 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Play Transition
+  m_Name: Song Transition
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Fade_Out_Song_Selection
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: Fade_Out_Game
     m_Type: 9
     m_DefaultFloat: 0
@@ -112,7 +106,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Fade_Out_Song_Selection
+    m_ConditionEvent: Fade_Out_Game
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102948494114679568}
@@ -175,7 +169,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3090fcc8eebafc943924cac2a59ef40d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1d7f374f11206e7439d832f1e5b00a8b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
