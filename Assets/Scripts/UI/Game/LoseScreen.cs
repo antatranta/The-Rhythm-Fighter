@@ -7,6 +7,6 @@ public class LoseScreen : MonoBehaviour
 {
     public void ReturnMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Song Selection");
     }
 }

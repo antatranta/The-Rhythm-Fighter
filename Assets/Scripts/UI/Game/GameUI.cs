@@ -15,11 +15,6 @@ public class GameUI : MonoBehaviour
 
     public ScoreGame score;
 
-    void Start()
-    {
-        SongManager.songCompletedEvent += YouWin;
-    }
-
     void Update()
     {
         if (healthbar.health <= 0f)
@@ -85,10 +80,5 @@ public class GameUI : MonoBehaviour
 
         SceneManager.LoadScene("LoseScreen");
         return;
-    }
-
-    void OnDestroy() 
-    {
-        SongManager.songCompletedEvent -= YouWin;
     }
 }

@@ -43,6 +43,10 @@ public class ScoreGame : MonoBehaviour
             TheScore += 100;
             ScoreDisplay.GetComponent<Text>().text = "Score: " + TheScore.ToString();
         }
+    }
 
+    void OnDestroy() 
+    {
+        SongManager.onHitEvent -= incrementScore;
     }
 }

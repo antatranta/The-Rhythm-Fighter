@@ -14,9 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame() 
     {
-        //SceneManager.LoadScene("SongSelection");
-        // temporary
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Song Selection");
     }
 
     public void QuitGame()
