@@ -42,8 +42,8 @@ public class SongManager : MonoBehaviour
     // display countdown at the beginning of a song to ready player
     public GameObject countDownCanvas;
     public TMPro.TextMeshProUGUI countDownText;
-    public SongInfo songInfo;
 
+    private SongInfo songInfo;
     // grab the tracks from the SongInfo
     private SongInfo.Track[] tracks;
     // how much time has passed since the song started
@@ -117,6 +117,9 @@ public class SongManager : MonoBehaviour
 
         // display countdown canvas
         countDownCanvas.SetActive(true);
+
+        // get the song info from the SongInfoMessenger
+        songInfo = SongInfoMessenger.Instance.currentSong;
 
         // listens to player input
         PlayerInputController.inputtedEvent += PlayerInput;
