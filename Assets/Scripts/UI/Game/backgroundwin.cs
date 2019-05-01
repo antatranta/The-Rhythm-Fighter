@@ -19,7 +19,7 @@ public class backgroundwin : MonoBehaviour
 
         videoPlayer.targetCameraAlpha = 0.5F;
 
-        videoPlayer.url = "Assets/Resources/Media/winvid.mp4"; 
+        videoPlayer.url = "Assets/Resources/Media/Images/winscreen.mp4"; 
 
         videoPlayer.frame = 100;
 
