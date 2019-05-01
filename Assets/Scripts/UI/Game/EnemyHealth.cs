@@ -12,8 +12,8 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
+        health = 1f;
         healthBar = GetComponent<HealthBar>();
-        SongManager.onHitEvent += decrementHealth;
     }
 
     void Update()
@@ -55,23 +55,8 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void decrementHealth(int trackNumber, SongManager.Rank rank)
+    void OnDestroy()
     {
-        /*if (health > 0.1f && rank == SongManager.Rank.PERFECT)
-        {
-            health -= .2f;
-            healthBar.SetSize(health);
-        }
-        else if (health > 0.1f && rank == SongManager.Rank.GOOD)
-        {
-            health -= .1f;
-            healthBar.SetSize(health);
-        }
-        if (health > 0.1f && rank == SongManager.Rank.OKAY)
-        {
-            health -= .05f;
-            healthBar.SetSize(health);
-        }*/
-        
+        health = 1f;
     }
 }

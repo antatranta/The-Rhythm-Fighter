@@ -114,6 +114,7 @@ public class SongManager : MonoBehaviour
         pauseTimeStamp = -1f;
         pausedTime = 0f;
         songStarted = false;
+        songPosition = 0;
 
         // display countdown canvas
         countDownCanvas.SetActive(true);
