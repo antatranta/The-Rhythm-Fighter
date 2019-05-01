@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_shadow
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 4372deb08be4c6a4ab2a814e6092d34a, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.6933594
+    height: 0.20117188
+  textureGUIDs:
+  - ad1f9b73d3faadd49afcac59f3ea38b8
+  textureSizes:
+  - {x: 710, y: 206}
+  defaultPivotOffsets:
+  - {x: 0, y: 0}
+  textureNames:
+  - 0000_shadow
+  texturePaths:
+  - Assets/textures/0000_shadow.png
+  lastBuildID: 20140822150923837
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

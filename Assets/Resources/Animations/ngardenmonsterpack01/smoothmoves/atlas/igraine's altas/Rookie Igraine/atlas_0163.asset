@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0163
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: ca8c848707c3b744dae252409c70f262, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0.7368164
+    y: 0
+    width: 0.2163086
+    height: 0.20410156
+  - serializedVersion: 2
+    x: 0.8378906
+    y: 0.20458984
+    width: 0.09716797
+    height: 0.092285156
+  - serializedVersion: 2
+    x: 0.6635742
+    y: 0.30859375
+    width: 0.100097656
+    height: 0.068847656
+  - serializedVersion: 2
+    x: 0
+    y: 0.30859375
+    width: 0.36865234
+    height: 0.3305664
+  - serializedVersion: 2
+    x: 0
+    y: 0.63964844
+    width: 0.15917969
+    height: 0.19726562
+  - serializedVersion: 2
+    x: 0
+    y: 0.83740234
+    width: 0.13964844
+    height: 0.14794922
+  - serializedVersion: 2
+    x: 0.39794922
+    y: 0
+    width: 0.3383789
+    height: 0.24707031
+  - serializedVersion: 2
+    x: 0.5732422
+    y: 0.30859375
+    width: 0.08984375
+    height: 0.091796875
+  - serializedVersion: 2
+    x: 0.39794922
+    y: 0.2475586
+    width: 0.0625
+    height: 0.056152344
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.39746094
+    height: 0.30810547
+  - serializedVersion: 2
+    x: 0.36914062
+    y: 0.30859375
+    width: 0.09814453
+    height: 0.1274414
+  - serializedVersion: 2
+    x: 0.15966797
+    y: 0.63964844
+    width: 0.122558594
+    height: 0.17675781
+  - serializedVersion: 2
+    x: 0.4609375
+    y: 0.2475586
+    width: 0.05859375
+    height: 0.05908203
+  - serializedVersion: 2
+    x: 0.15966797
+    y: 0.81689453
+    width: 0.13232422
+    height: 0.12451172
+  - serializedVersion: 2
+    x: 0.46777344
+    y: 0.30859375
+    width: 0.10498047
+    height: 0.08251953
+  - serializedVersion: 2
+    x: 0.7368164
+    y: 0.20458984
+    width: 0.10058594
+    height: 0.08984375
+  textureGUIDs:
+  - 423cf2336659c4c4cadc3664d56a9c4f
+  - 452c903ed3c3b6549bf562077ab7cd82
+  - 47ad57fe50a9cc8408df39b852695920
+  - 4ae4bff25f22a2841b706bde81349eb9
+  - 4d92e33d622fc124ca817ac364dc3d65
+  - 54ac102719a34b64fb3ffdd68abe9086
+  - 62ead063775cc894a8e9413ece4a7615
+  - 63915af18bf79e0418a8fa3cf7b5e2e1
+  - 7b538f4b81aa1224cb08dae64f2743b3
+  - 91dc1c2e14b27fe4f9c6793ac6737bff
+  - a178a4d144be2a645ae0a168b1a83e50
+  - c206765ff023ced40932d64920d434f9
+  - d0c4690d66a79ce46956b2744b0e44bd
+  - d2eccb53c2b935441b8bf446f9d6e1d0
+  - ee422c856a9d1174a8751758d06aa0e9
+  - ef4d1f457e2231548b5948430c82ea2c
+  textureSizes:
+  - {x: 443, y: 418}
+  - {x: 199, y: 189}
+  - {x: 205, y: 141}
+  - {x: 755, y: 677}
+  - {x: 326, y: 404}
+  - {x: 286, y: 303}
+  - {x: 693, y: 506}
+  - {x: 184, y: 188}
+  - {x: 128, y: 115}
+  - {x: 814, y: 631}
+  - {x: 201, y: 261}
+  - {x: 251, y: 362}
+  - {x: 120, y: 121}
+  - {x: 271, y: 255}
+  - {x: 215, y: 169}
+  - {x: 206, y: 184}
+  defaultPivotOffsets:
+  - {x: 0.13392857, y: -0.32929766}
+  - {x: 0.074999996, y: 0.49073127}
+  - {x: 0.4767857, y: 0.3894377}
+  - {x: -0.31071427, y: 0.280795}
+  - {x: 0.13392857, y: -0.35015026}
+  - {x: 0.4875, y: 0.490488}
+  - {x: 0.10714285, y: 0.13206522}
+  - {x: 0, y: -0.010486322}
+  - {x: 0.47142857, y: 0.11925465}
+  - {x: -0.19821428, y: 0.21423477}
+  - {x: 0.4125, y: 0.32179803}
+  - {x: 0.28928572, y: 0.50145525}
+  - {x: 0.06428571, y: 0.4569067}
+  - {x: -0.27321428, y: 0.33590338}
+  - {x: -0.17678571, y: 0.4702557}
+  - {x: 0.14464286, y: 0.4798137}
+  textureNames:
+  - 0163_05_head
+  - 0163_16_right_foot
+  - 0163_06_left_foreArm
+  - 0163_01_effect
+  - 0163_08_body_upper
+  - 0163_15_left_shinLeg
+  - 0163_18_body_lower_b
+  - 0163_02_ball
+  - 0163_11_right_foreArm
+  - 0163_19_effect
+  - 0163_12_right_upperArm
+  - 0163_17_right_shinLeg
+  - 0163_03_left_hand
+  - 0163_07_left_upperArm
+  - 0163_09_right_hand
+  - 0163_14_left_foot
+  texturePaths:
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_05_head.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_16_right_foot.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_06_left_foreArm.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_01_effect.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_08_body_upper.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_15_left_shinLeg.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_18_body_lower_b.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_02_ball.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_11_right_foreArm.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_19_effect.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_12_right_upperArm.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_17_right_shinLeg.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_03_left_hand.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_07_left_upperArm.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_09_right_hand.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_14_left_foot.png
+  lastBuildID: 201505131612541010
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 512
+  padding: 1
+  forceSquare: 0

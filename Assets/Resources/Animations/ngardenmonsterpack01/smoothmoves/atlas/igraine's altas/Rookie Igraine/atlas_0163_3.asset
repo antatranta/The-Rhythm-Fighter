@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0163_3
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 9f31d5416c7e20e4d978fa7a053c370a, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.28320312
+    height: 0.7685547
+  textureGUIDs:
+  - e1bafbd7ace610d47830921746f5cdc9
+  textureSizes:
+  - {x: 145, y: 787}
+  defaultPivotOffsets:
+  - {x: -0.099717595, y: -0.11733129}
+  textureNames:
+  - 0163_04_rod
+  texturePaths:
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_04_rod.png
+  lastBuildID: 20150513161353579
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 512
+  padding: 1
+  forceSquare: 0

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: atlas_0163_2
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 828d6c4144d11c548bb95850259536f3, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0.46484375
+    y: 0
+    width: 0.28515625
+    height: 0.8359375
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.4638672
+    height: 0.79296875
+  textureGUIDs:
+  - 793f8213cf9295946a2c5506f88fd632
+  - ba5f35e8f83d9fd4d9479e289e3da349
+  textureSizes:
+  - {x: 292, y: 428}
+  - {x: 475, y: 406}
+  defaultPivotOffsets:
+  - {x: -0.49821427, y: 0.4641689}
+  - {x: 0.17678571, y: 0.4826911}
+  textureNames:
+  - 0163_13_hair
+  - 0163_10_body_lower
+  texturePaths:
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_13_hair.png
+  - Assets/0157_0177/textures/0157_0177/0163_0165/0163/0163_10_body_lower.png
+  lastBuildID: 20150513161349200
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 512
+  padding: 1
+  forceSquare: 0
