@@ -48,6 +48,15 @@ public class albumCover : MonoBehaviour
         setActive();
     }
 
+    public void slowedDown()
+    {
+        image.sprite = woodsImage;
+        title.GetComponent<UnityEngine.UI.Text>().text = "Lost Woods - Slowed";
+        album.GetComponent<UnityEngine.UI.Text>().text = "Legend of Zelda";
+        artist.GetComponent<UnityEngine.UI.Text>().text = "Ocarina of Time";
+        setActive();
+    }
+
     public void setActive()
     {
         image.enabled = true;

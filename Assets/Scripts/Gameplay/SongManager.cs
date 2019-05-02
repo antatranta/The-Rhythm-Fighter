@@ -122,6 +122,17 @@ public class SongManager : MonoBehaviour
         // get the song info from the SongInfoMessenger
         songInfo = SongInfoMessenger.Instance.currentSong;
 
+        if (songInfo.songTitle == "Lost Woods - Slowed")
+        {
+            AudioSource temp = GetComponent<AudioSource>();
+            temp.pitch = 0.67f;
+        }
+        else
+        {
+            AudioSource temp = GetComponent<AudioSource>();
+            temp.pitch = 1f;
+        }
+
         // listens to player input
         PlayerInputController.inputtedEvent += PlayerInput;
 
