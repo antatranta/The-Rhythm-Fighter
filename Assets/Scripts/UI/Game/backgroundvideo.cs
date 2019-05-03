@@ -29,7 +29,7 @@ public class backgroundvideo : MonoBehaviour
 
         // Set the video to play. URL supports local absolute or relative paths.
         // Here, using absolute.
-        videoPlayer.url = "Assets/Resources/Media/Images/explosionvid.mp4"; 
+        videoPlayer.url = "Assets/Resources/Media/Images/youlose.mp4"; 
 
         // Skip the first 100 frames.
         videoPlayer.frame = 100;
