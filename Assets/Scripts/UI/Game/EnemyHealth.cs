@@ -40,7 +40,7 @@ public class EnemyHealth : MonoBehaviour
                 //Bar flashes white under 30% health
                 if ((int)(health * 100f) % 2 == 0)
                 {
-                    healthBar.SetColor(Color.white);
+                    //healthBar.SetColor(Color.white);
                 }
                 else
                 {
