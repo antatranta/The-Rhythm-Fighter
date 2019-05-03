@@ -32,7 +32,7 @@ public class audioDemo : MonoBehaviour
 
     public void lostSlowed()
     {
-        playback.clip = woodsSlowed;
+        playback.clip = lostWoods;
         playback.pitch = 0.67f;
         playback.Play();
     }

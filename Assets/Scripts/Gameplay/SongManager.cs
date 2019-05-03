@@ -127,11 +127,11 @@ public class SongManager : MonoBehaviour
             AudioSource temp = GetComponent<AudioSource>();
             temp.pitch = 0.67f;
         }
-        else
-        {
-            AudioSource temp = GetComponent<AudioSource>();
-            temp.pitch = 1f;
-        }
+        //else
+        //{
+        //    AudioSource temp = GetComponent<AudioSource>();
+        //    temp.pitch = 1f;
+        //}
 
         // listens to player input
         PlayerInputController.inputtedEvent += PlayerInput;
