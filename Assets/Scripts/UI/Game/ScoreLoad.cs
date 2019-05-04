@@ -6,7 +6,7 @@ using System.IO;
 
 public class ScoreLoad : MonoBehaviour
 {
-    string fileName = "highscore.data";
+    string fileName = "Assets/Resources/highscore.data";
     string ScoreLoads;
     public Text HighScoreText1;
     public Text HighScoreText2;

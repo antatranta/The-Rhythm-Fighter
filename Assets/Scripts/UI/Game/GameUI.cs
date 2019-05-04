@@ -15,6 +15,18 @@ public class GameUI : MonoBehaviour
 
     public ScoreGame score;
 
+    void Start()
+    {
+        if (!File.Exists("Assets/Resources/scoreTemp.data"))
+        {
+            File.CreateText("Assets/Resources/scoreTemp.data");
+        }
+        if (!File.Exists("Assets/Resources/highscore.data"))
+        {
+            File.CreateText("Assets/Resources/highscore.data");
+        }
+    }
+
     void Update()
     {
         if (healthbar.health <= 0f)
@@ -56,11 +68,11 @@ public class GameUI : MonoBehaviour
 
     public void YouWin() 
     {
-        FileStream fileStream = File.Open("scoreTemp.data", FileMode.Open); //Flush File 
+        FileStream fileStream = File.Open("Assets/Resources/scoreTemp.data", FileMode.Open); //Flush File 
         fileStream.SetLength(0);
         fileStream.Close();
 
-        StreamWriter OurFile = File.CreateText("scoreTemp.data");
+        StreamWriter OurFile = File.CreateText("Assets/Resources/scoreTemp.data");
         OurFile.WriteLine("" + score.TheScore);
         OurFile.Close();
 
@@ -70,11 +82,11 @@ public class GameUI : MonoBehaviour
 
     public void YouLose()
     {
-        FileStream fileStream = File.Open("scoreTemp.data", FileMode.Open); //Flush File 
+        FileStream fileStream = File.Open("Assets/Resources/scoreTemp.data", FileMode.Open); //Flush File 
         fileStream.SetLength(0);
         fileStream.Close(); 
 
-        StreamWriter OurFile = File.CreateText("scoreTemp.data");
+        StreamWriter OurFile = File.CreateText("Assets/Resources/scoreTemp.data");
         OurFile.WriteLine("" + score.TheScore);
         OurFile.Close();
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ScoreSave : MonoBehaviour
 {
-    string fileName = "highscore.data";
+    string fileName = "Assets/Resources/highscore.data";
     public ScoreLoad scoreloader;
 
     public Text recentScore;
@@ -18,7 +18,7 @@ public class ScoreSave : MonoBehaviour
     public void Start()
     {
         recentScore = GameObject.Find("Canvas/Score").GetComponent<Text>();
-        StreamReader sr = new StreamReader("scoreTemp.data"); //sr = streamreader
+        StreamReader sr = new StreamReader("Assets/Resources/scoreTemp.data"); //sr = streamreader
         HighScore = new List<int>();
         ScoreAmount = int.Parse(sr.ReadLine());
         recentScore.text = "Your score: " + ScoreAmount;
